@@ -8,7 +8,6 @@ import { AnimatePresence, motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 
 // i18n
-// import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
 import { HiPhone } from "react-icons/hi";
 import Socials from "./Socials";

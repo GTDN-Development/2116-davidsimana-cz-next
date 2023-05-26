@@ -1,5 +1,4 @@
 import { siteConfig } from "@/configs/site-config";
-import { useTranslation } from "@/hooks/useTranslation";
 import Container from "./Container";
 import Heading from "./Heading";
 import Link from "./Link";
@@ -7,7 +6,6 @@ import Logo from "./Logo";
 import Socials from "./Socials";
 
 function RevealMark({ className = "" }: { className?: string }) {
-  const t = useTranslation();
   return (
     <a
       href="https://reveal.cz"
@@ -22,7 +20,7 @@ function RevealMark({ className = "" }: { className?: string }) {
         height="10"
         className="mr-3 inline -translate-y-0.5"
       />
-      <span>{t.common.footer.revealSignature}</span>
+      <span>Vytvořili Reveal</span>
     </a>
   );
 }
