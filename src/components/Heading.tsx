@@ -14,9 +14,9 @@ type HeadingProps = {
 const componentVariants = {
   base: "block font-bold font-sans",
   size: {
-    xs: "text-base sm:text-xl",
+    xs: "text-base",
     sm: "text-xl lg:text-2xl",
-    md: "text-2xl sm:text-3xl lg:text-4xl",
+    md: "text-2xl sm:text-3xl lg:text-5xl",
     lg: "text-3xl sm:text-4xl lg:text-6xl",
     xl: "text-4xl sm:text-6xl lg:text-7xl",
     "2xl": "text-5xl sm:text-6xl md:text-7xl lg:text-8xl",
@@ -26,8 +26,9 @@ const componentVariants = {
     inherit: "",
     rich: "text-gray-900",
     muted: "text-gray-500",
-    primary:
-      "bg-clip-text bg-gradient-to-tr from-primary-700 to-secondary-400 text-transparent",
+    primary: "text-primary",
+    // primary:
+    //   "bg-clip-text bg-gradient-to-tr from-primary-700 to-secondary-400 text-transparent",
     white: "text-white",
     black: "text-gray-900",
   },
