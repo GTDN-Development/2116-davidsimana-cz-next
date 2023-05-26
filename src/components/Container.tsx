@@ -18,7 +18,7 @@ const componentVariants = {
   size: {
     xs: "max-w-2xl",
     sm: "max-w-4xl",
-    md: "max-w-[1344px]",
+    md: "max-w-[1280px]",
     lg: "max-w-[1728px]",
     fluid: "",
   },

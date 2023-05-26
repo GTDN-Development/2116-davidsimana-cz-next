@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 // import { useTranslation } from "@/hooks/useTranslation";
 import { useRouter } from "next/router";
 import { HiPhone } from "react-icons/hi";
+import Socials from "./Socials";
 
 // ToDo
 // - Rewrite styling to be more pretty and easier to customize
@@ -185,9 +186,6 @@ function TouchMenu() {
                     }}
                     className="col-span-1 xl:order-3 xl:col-span-2"
                   >
-                    {/* <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
-                      {t.common.nav.menu}
-                    </span> */}
                     <ul className="flex flex-col items-start gap-y-2 sm:gap-y-4 xl:gap-y-14">
                       {routes.map((route, i) => (
                         <li key={i}>
@@ -215,9 +213,6 @@ function TouchMenu() {
                     }}
                     className="col-span-1 xl:order-2 xl:col-span-2"
                   >
-                    {/* <span className="mb-3 block text-xs uppercase opacity-60 sm:text-sm lg:mb-6">
-                      {t.common.nav.otherLinks}
-                    </span> */}
                     <ul className="flex flex-col items-start gap-y-2">
                       {contact.map((contactLink, i) => (
                         <Link
@@ -245,8 +240,10 @@ function TouchMenu() {
                         ease: [0.33, 1, 0.68, 1],
                       },
                     }}
-                    className="col-span-1 xl:order-1 xl:col-span-2"
-                  ></motion.div>
+                    className="col-span-1 text-gray-800 xl:order-1 xl:col-span-2"
+                  >
+                    <Socials />
+                  </motion.div>
                 </div>
               </Container>
             </motion.div>
@@ -287,10 +284,9 @@ export default function Header() {
     <nav
       className={clsx(
         "fixed inset-x-0 top-0 isolate z-fixed w-full py-2.5 transition duration-500 ease-out lg:py-4",
-        isScrolled
-          ? "bg-white/80 shadow-2xl shadow-gray-800/15 backdrop-blur-lg"
-          : "",
-        !isVisible && "-translate-y-full"
+        isScrolled ? "bg-white/80 backdrop-blur-lg" : "",
+        !isVisible && "-translate-y-full",
+        isScrolled && isVisible && "shadow-2xl shadow-gray-800/10"
       )}
     >
       <Container size="fluid">

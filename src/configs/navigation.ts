@@ -1,3 +1,10 @@
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaSpotify,
+} from "react-icons/fa";
+
 export const routes = [
   {
     href: "/#domu",
@@ -29,5 +36,28 @@ export const contact = [
   {
     href: "mailto:info@drive4people.cz",
     label: "info@drive4people.cz",
+  },
+];
+
+export const socials = [
+  {
+    href: "https://www.facebook.com/drive4people",
+    label: "Facebook",
+    icon: FaFacebookF,
+  },
+  {
+    href: "https://www.instagram.com/drive4people",
+    label: "Instagram",
+    icon: FaInstagram,
+  },
+  {
+    href: "https://open.spotify.com/show/5Z3Z1Z2Z2Z2Z2Z2Z2Z2Z2Z",
+    label: "Spotify",
+    icon: FaSpotify,
+  },
+  {
+    href: "https://www.linkedin.com/company/drive4people",
+    label: "LinkedIn",
+    icon: FaLinkedinIn,
   },
 ];

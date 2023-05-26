@@ -15,6 +15,7 @@
     "@fontsource/montserrat": "^4.5.14",
     "@headlessui/react": "^1.7.14",
     "@next/font": "13.1.6",
+    "@radix-ui/react-dialog": "^1.0.4",
     "@radix-ui/react-separator": "^1.0.1",
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",

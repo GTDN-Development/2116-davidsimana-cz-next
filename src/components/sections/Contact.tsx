@@ -1,43 +1,16 @@
 import { contact } from "@/configs/navigation";
-import { useTranslation } from "@/hooks/useTranslation";
 import emailjs from "@emailjs/browser";
-import clsx from "clsx";
-import { useRouter } from "next/router";
 import { useRef, useState } from "react";
+import Alert from "../Alert";
 import Button from "../Button";
 import Container from "../Container";
 import Heading from "../Heading";
 import Link from "../Link";
-import PreHeading from "../PreHeading";
 import Reveal from "../Reveal";
 import Checkbox from "../inputs/Checkbox";
 import Hnypot from "../inputs/Hnypot";
 import TextArea from "../inputs/TextArea";
 import TextInput from "../inputs/TextInput";
-
-function Alert({
-  type = "success",
-  title = "Děkujeme za odeslání formuláře",
-  message = "Váš formulář byl úspěšně odeslán. Brzy se Vám ozveme.",
-}: {
-  type?: "success" | "error";
-  title?: string;
-  message?: string;
-}) {
-  return (
-    <div
-      className={clsx(
-        "flex flex-col items-start justify-start gap-1 rounded-2xl p-5",
-        type === "success"
-          ? "border border-emerald-300 bg-emerald-200 text-emerald-900"
-          : "border border-red-300 bg-red-200 text-red-900"
-      )}
-    >
-      <h4 className="text-xl font-bold sm:text-2xl">{title}</h4>
-      <p>{message}</p>
-    </div>
-  );
-}
 
 function ContactForm({ className = "" }: { className?: string }) {
   const [isMailSent, setIsMailSent] = useState(false);
@@ -45,11 +18,6 @@ function ContactForm({ className = "" }: { className?: string }) {
   const [isLoading, setIsLoading] = useState(false);
 
   const formRef = useRef<HTMLFormElement>(null);
-
-  const t = useTranslation();
-
-  const router = useRouter();
-  const lang = router.locale;
 
   // Honeypot refs
   const hnyNameRef = useRef<HTMLInputElement>(null);
@@ -77,15 +45,15 @@ function ContactForm({ className = "" }: { className?: string }) {
     ) {
       emailjs
         .sendForm(
-          "service_kxwxi1a",
-          "template_mukthqd",
-          formRef.current,
+          "service_e8iymks",
+          "template_w6pnfko",
+          e.target,
           "user_2tNsUaIQSULo6wFXKZVCs"
         )
         .then(
           // Success
           () => {
-            router.push(`/${lang}/odeslany-formular`);
+            setIsMailSent(true);
             e.target.reset();
             setIsLoading(false);
           },
@@ -130,15 +98,14 @@ function ContactForm({ className = "" }: { className?: string }) {
           type="text"
           id="name"
           name="name"
-          label={t.index.contect.form.nameSurnameInput}
+          label={"Jméno a příjmení"}
           isRequired
         />
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
           <TextInput
             type="email"
-            id="mail"
-            name="mail"
-            label={t.index.contect.form.emailInput}
+            name="email"
+            label={"E-mail"}
             isRequired
             className="col-span-1"
           />
@@ -146,7 +113,7 @@ function ContactForm({ className = "" }: { className?: string }) {
             type="tel"
             id="tel"
             name="tel"
-            label={t.index.contect.form.phoneInput}
+            label={"Telefon"}
             isRequired
             className="col-span-1"
           />
@@ -154,7 +121,7 @@ function ContactForm({ className = "" }: { className?: string }) {
         <TextArea
           id="message"
           name="message"
-          label={t.index.contect.form.messageInput}
+          label={"Vaše zpráva"}
           isRequired
         />
         <Checkbox
@@ -163,33 +130,30 @@ function ContactForm({ className = "" }: { className?: string }) {
           isRequired
           label={
             <span>
-              {t.index.contect.form.gdprLabel}{" "}
+              {"Souhlasím s podmínkami"}{" "}
               <Link
                 href="/gdpr"
                 hoverEffect="scale-up"
                 className="text-primary-500"
               >
-                {t.index.contect.form.gdprLink}
+                {"ochrany osobních údajů."}
               </Link>
             </span>
           }
         />
         <Button size="lg" type="submit" isLoading={isLoading}>
-          {t.index.contect.form.submitButton}
+          Odeslat
         </Button>
         {isMailSent && (
-          <Alert
-            type="success"
-            title={t.index.contect.form.successAlert.heading}
-            message={t.index.contect.form.successAlert.text}
-          />
+          <Alert intent="success" title={"Formulář byl úspěšně odeslán"}>
+            Děkujeme za vyplnění formuláře. Ozveme se vám co nejdříve to půjde.
+          </Alert>
         )}
         {formError && (
-          <Alert
-            type="error"
-            title={t.index.contect.form.errorAlert.heading}
-            message={t.index.contect.form.errorAlert.text}
-          />
+          <Alert intent="error" title={"Něco se nepovedlo"}>
+            Formulář se nepodařilo odeslat, zkuste to později, nebo využijte
+            jiný způsob kontaktu.
+          </Alert>
         )}
       </form>
     </div>
@@ -197,77 +161,51 @@ function ContactForm({ className = "" }: { className?: string }) {
 }
 
 export default function Contact() {
-  const t = useTranslation();
   return (
-    <Container pt="md" pb="lg" id="kontakt">
-      <Reveal>
-        <PreHeading level={2}>{t.index.contect.preHeading}</PreHeading>
-        <Heading level={"none"} size="md">
-          {t.index.contect.heading}
+    <Container
+      pt="md"
+      pb="lg"
+      id="kontakt"
+      className="grid gap-x-12 gap-y-16 lg:grid-cols-2"
+    >
+      <Reveal className="col-span-1 flex flex-col gap-5">
+        <Heading level={"none"} size="lg" color="primary" hasMarginBottom>
+          Kontakt
         </Heading>
-      </Reveal>
-
-      <div className=" mt-12 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-16">
         <Reveal>
-          <span className="mb-2 block text-base text-gray-500 md:text-lg">
-            {t.index.contect.phoneHeading}
-          </span>
+          <p>
+            Ke každé nezávazné schůzce ode mě dostanete ebook{" "}
+            <span className="font-semibold">7 oblastí pro zdravé finance</span>,
+            kde se dozvíte spoustu zajímavých rad, které Vám pomůžou na cestě za
+            finanční svobodou.
+          </p>
+        </Reveal>
+        <Reveal className="mt-5 flex flex-col items-start justify-start gap-3 lg:gap-6">
           <Link
             href={contact[0].href}
-            hoverEffect="scale-up"
-            className="text-xl font-semibold text-primary md:text-2xl"
+            hoverEffect="scale-down"
+            color="primary"
+            className="text-lg font-semibold sm:text-xl lg:text-2xl"
           >
             {contact[0].label}
           </Link>
-        </Reveal>
-
-        <Reveal>
-          <span className="mb-2 block text-base text-gray-500 md:text-lg">
-            {t.index.contect.emailHeading}
-          </span>
           <Link
             href={contact[1].href}
-            hoverEffect="scale-up"
-            className="text-xl font-semibold text-primary md:text-2xl"
+            hoverEffect="scale-down"
+            color="primary"
+            className="text-lg font-semibold sm:text-xl lg:text-2xl"
           >
             {contact[1].label}
           </Link>
         </Reveal>
-      </div>
+      </Reveal>
 
-      <div className="mt-32 grid grid-cols-1 gap-16 md:grid-cols-3">
-        <Reveal className="col-span-2">
-          <Heading level={3} size="sm">
-            {t.index.contect.form.heading}
-          </Heading>
-          <div className="pt-6">
-            <ContactForm />
-          </div>
-        </Reveal>
-
-        <Reveal className="col-span-1">
-          <Heading level={4} size="sm">
-            {t.index.contect.billingInfo.heading}
-          </Heading>
-          <p className="pt-6">
-            <span className="font-bold">
-              {t.index.contect.billingInfo.sro.name}
-            </span>{" "}
-            <br />
-            <span>{t.index.contect.billingInfo.sro.ico}</span>
-            <br />
-            <span>{t.index.contect.billingInfo.sro.dic}</span>
-            <br />
-            <br />
-            <span>{t.index.contect.billingInfo.bank.number}</span>
-            <br />
-            <span>{t.index.contect.billingInfo.bank.iban}</span>
-            <br />
-            <span>{t.index.contect.billingInfo.bank.bicSwift}</span>
-            <br />
-          </p>
-        </Reveal>
-      </div>
+      <Reveal className="col-span-1">
+        <Heading level={"none"} size="sm" color="primary" hasMarginBottom>
+          Máte dotaz?
+        </Heading>
+        <ContactForm />
+      </Reveal>
     </Container>
   );
 }

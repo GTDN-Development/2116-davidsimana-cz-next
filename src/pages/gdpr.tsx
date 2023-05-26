@@ -3,8 +3,6 @@ import Layout from "@/components/Layout";
 import Prose from "@/components/Prose";
 import Seo from "@/components/Seo";
 
-import { useTranslation } from "@/hooks/useTranslation";
-
 const globalSettings = {
   launchDate: "14. 2. 2022",
   client: {
@@ -17,10 +15,9 @@ const globalSettings = {
 };
 
 export default function Gdpr() {
-  const t = useTranslation();
   return (
     <Layout>
-      <Seo title={"GDPR"} description={t.index.seo.description} />
+      <Seo title="GDPR" description="Lorem ipsum dolor" />
 
       <header className="flex h-[512px] w-screen items-center justify-center bg-primary-900 text-primary-100">
         <h1 className="text-2xl font-bold sm:text-4xl xl:text-7xl">GDPR</h1>
