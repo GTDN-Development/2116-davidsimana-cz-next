@@ -11,7 +11,7 @@ export default function Logo({
     <div className={`h-12 w-28 ${className}`}>
       <img
         src={"/svg/logo.svg"}
-        alt="Logo Drive4people"
+        alt="Logo davidsimana"
         width="112"
         height="48"
         className={clsx("h-full w-full", isWhite && "invert", className)}

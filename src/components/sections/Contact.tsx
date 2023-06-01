@@ -11,6 +11,7 @@ import Checkbox from "../inputs/Checkbox";
 import Hnypot from "../inputs/Hnypot";
 import TextArea from "../inputs/TextArea";
 import TextInput from "../inputs/TextInput";
+import { NewsletterManual } from "./Newsletter";
 
 function ContactForm({ className = "" }: { className?: string }) {
   const [isMailSent, setIsMailSent] = useState(false);
@@ -161,51 +162,74 @@ function ContactForm({ className = "" }: { className?: string }) {
 }
 
 export default function Contact() {
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
   return (
-    <Container
-      pt="md"
-      pb="lg"
-      id="kontakt"
-      className="grid gap-x-12 gap-y-16 lg:grid-cols-2"
-    >
-      <Reveal className="col-span-1 flex flex-col gap-5">
-        <Heading level={"none"} size="lg" color="primary" hasMarginBottom>
-          Kontakt
-        </Heading>
-        <Reveal>
-          <p>
-            Ke každé nezávazné schůzce ode mě dostanete ebook{" "}
-            <span className="font-semibold">7 oblastí pro zdravé finance</span>,
-            kde se dozvíte spoustu zajímavých rad, které Vám pomůžou na cestě za
-            finanční svobodou.
-          </p>
+    <>
+      <Container
+        as="section"
+        id="kontakt"
+        pt="md"
+        pb="lg"
+        className="grid gap-x-12 gap-y-16 lg:grid-cols-2"
+      >
+        <Reveal className="col-span-1 flex flex-col gap-5">
+          <Heading level={"none"} size="lg" color="primary" hasMarginBottom>
+            Kontakt
+          </Heading>
+          <Reveal>
+            <p>
+              Ke každé nezávazné schůzce ode mě dostanete ebook{" "}
+              <span className="font-semibold">
+                7 oblastí pro zdravé finance
+              </span>
+              , kde se dozvíte spoustu zajímavých rad, které Vám pomůžou na
+              cestě za finanční svobodou.
+            </p>
+          </Reveal>
+          <Reveal className="mt-5 flex flex-col items-start justify-start gap-3 lg:gap-6">
+            <Link
+              href={contact[0].href}
+              hoverEffect="scale-down"
+              color="primary"
+              className="text-lg font-semibold sm:text-xl lg:text-2xl"
+            >
+              {contact[0].label}
+            </Link>
+            <Link
+              href={contact[1].href}
+              hoverEffect="scale-down"
+              color="primary"
+              className="text-lg font-semibold sm:text-xl lg:text-2xl"
+            >
+              {contact[1].label}
+            </Link>
+            <Link
+              as={"button"}
+              hoverEffect="scale-down"
+              color="primary"
+              onClick={() => setIsNewsletterOpen(true)}
+              className="text-lg font-semibold sm:text-xl lg:text-2xl"
+            >
+              Odebírej novinky
+            </Link>
+          </Reveal>
         </Reveal>
-        <Reveal className="mt-5 flex flex-col items-start justify-start gap-3 lg:gap-6">
-          <Link
-            href={contact[0].href}
-            hoverEffect="scale-down"
-            color="primary"
-            className="text-lg font-semibold sm:text-xl lg:text-2xl"
-          >
-            {contact[0].label}
-          </Link>
-          <Link
-            href={contact[1].href}
-            hoverEffect="scale-down"
-            color="primary"
-            className="text-lg font-semibold sm:text-xl lg:text-2xl"
-          >
-            {contact[1].label}
-          </Link>
-        </Reveal>
-      </Reveal>
 
-      <Reveal className="col-span-1">
-        <Heading level={"none"} size="sm" color="primary" hasMarginBottom>
-          Máte dotaz?
-        </Heading>
-        <ContactForm />
-      </Reveal>
-    </Container>
+        <Reveal className="col-span-1">
+          <Heading level={"none"} size="sm" color="primary" hasMarginBottom>
+            Máte dotaz?
+          </Heading>
+          <Reveal>
+            <ContactForm />
+          </Reveal>
+        </Reveal>
+      </Container>
+
+      {/* Newsletter */}
+      <NewsletterManual
+        isOpen={isNewsletterOpen}
+        setIsOpen={setIsNewsletterOpen}
+      />
+    </>
   );
 }

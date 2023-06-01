@@ -114,7 +114,7 @@ export default function Services() {
 
         {/* Karty */}
         <div className="flex flex-col-reverse items-center justify-center pt-16 sm:pt-20 md:flex-row lg:pt-28">
-          <div className="shadow-soft-2xl z-0 my-4 px-8 py-10 pb-28 opacity-70 md:px-12">
+          <Reveal className="shadow-soft-2xl z-0 my-4 px-8 py-10 pb-28 opacity-70 md:px-12">
             <Heading
               level="none"
               size="sm"
@@ -131,9 +131,9 @@ export default function Services() {
               <li>Nediverzifikuji své portfolio</li>
               <li>Nemám vytvořený finanční plán</li>
             </ul>
-          </div>
+          </Reveal>
 
-          <div className="bg-body z-1 my-4 flex max-w-md scale-105 flex-col rounded-3xl px-8 py-10 leading-5 shadow-2xl md:px-12">
+          <Reveal className="bg-body z-1 my-4 flex max-w-md scale-105 flex-col rounded-3xl px-8 py-10 leading-5 shadow-2xl md:px-12">
             <Heading
               level="none"
               size="sm"
@@ -160,7 +160,7 @@ export default function Services() {
             >
               Začněme
             </Button>
-          </div>
+          </Reveal>
         </div>
       </Container>
     </section>

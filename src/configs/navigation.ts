@@ -8,23 +8,27 @@ import {
 
 export const routes = [
   {
-    href: "/#domu",
-    label: "Domů",
+    href: "/",
+    label: "Hlavní strana",
   },
   {
-    href: "/#sluzby",
-    label: "Služby",
+    href: "/hypoteky",
+    label: "Hypotéky",
+  },
+  {
+    href: "/investice",
+    label: "Investice",
   },
   {
     href: "/#jak-fungujeme",
-    label: "Jak fungujeme",
+    label: "Jak to funguje",
   },
   {
-    href: "/#finance",
+    href: "/#o-financich",
     label: "O financích",
   },
   {
-    href: "/#kontakt",
+    href: "#kontakt",
     label: "Kontakt",
   },
 ];
@@ -35,24 +39,24 @@ export const contact = [
     label: "+420 773 997 434",
   },
   {
-    href: "mailto:info@drive4people.cz",
-    label: "info@drive4people.cz",
+    href: "mailto:info@davidsimana.cz",
+    label: "info@davidsimana.cz",
   },
 ];
 
 export const socials = [
   {
-    href: "https://www.instagram.com/drive4people",
+    href: "https://www.instagram.com/davidsimana",
     label: "Instagram",
     icon: FaInstagram,
   },
   {
-    href: "https://www.facebook.com/drive4people",
+    href: "https://www.facebook.com/davidsimana",
     label: "Facebook",
     icon: FaFacebookF,
   },
   {
-    href: "https://www.linkedin.com/company/drive4people",
+    href: "https://www.linkedin.com/company/davidsimana",
     label: "LinkedIn",
     icon: FaLinkedinIn,
   },
@@ -60,12 +64,12 @@ export const socials = [
     href: "https://www.youtube.com/@davidsimanapfp",
     label: "Youtube",
     icon: FaYoutube,
-    classNames: "bg-red-600",
+    classNames: "bg-gradient-to-br from-red-600 to-red-900",
   },
   {
     href: "https://open.spotify.com/show/1jt4nG4mSAxPPoR5nYkEBN",
     label: "Spotify",
     icon: FaSpotify,
-    classNames: "bg-emerald-600",
+    classNames: "bg-gradient-to-br from-emerald-600 to-emerald-800",
   },
 ];

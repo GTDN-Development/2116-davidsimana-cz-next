@@ -1,8 +1,8 @@
 export const siteConfig = {
   seo: {
-    url: "https://www.drive4people.cz",
-    shortUrl: "drive4people.cz",
-    titleTemplate: "%s | Drive4people",
+    url: "https://www.davidsimana.cz",
+    shortUrl: "davidsimana.cz",
+    titleTemplate: "%s | David Šimana",
     defaultDescription: "Popis webu",
   },
 };

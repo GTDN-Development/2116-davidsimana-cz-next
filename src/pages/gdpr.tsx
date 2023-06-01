@@ -9,7 +9,7 @@ const globalSettings = {
     fullName: "Lukáš Jiránek",
     ico: "05564867",
     phone: "+420 773 997 434",
-    email: "info@drive4people.cz",
+    email: "info@davidsimana.cz",
     adress: "Hornická 223, 33 022 Zbůch",
   },
 };

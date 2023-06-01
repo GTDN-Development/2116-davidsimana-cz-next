@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import Layout from "@/components/Layout";
+import Reveal from "@/components/Reveal";
 import Seo from "@/components/Seo";
 import Collaboration from "@/components/sections/Collaboration";
 import Contact from "@/components/sections/Contact";
@@ -19,10 +20,10 @@ export default function Home() {
 
       <div className="bg-gradient-to-r from-primary-900 to-primary-700 md:to-primary-500">
         <Container py="xl" size="md">
-          <span className="mx-auto block text-center text-3xl font-bold !leading-snug text-primary-50 md:text-5xl 2xl:text-6xl">
+          <Reveal className="mx-auto block text-center text-3xl font-bold !leading-snug text-primary-50 md:text-5xl 2xl:text-6xl">
             Specializuji se na podnikatele, majitele firem, freelancery,
             manažery, lékaře a IT specialisty.
-          </span>
+          </Reveal>
         </Container>
       </div>
 

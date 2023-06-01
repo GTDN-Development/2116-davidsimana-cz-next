@@ -3,7 +3,7 @@ import SmartLink from "./SmartLink";
 
 // <Link> Component
 type LinkProps = {
-  href: string;
+  href?: string;
   as?: React.ElementType;
   children: React.ReactNode;
 

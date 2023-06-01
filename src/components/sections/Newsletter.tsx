@@ -8,21 +8,17 @@ import Checkbox from "../inputs/Checkbox";
 import Hnypot from "../inputs/Hnypot";
 import TextInput from "../inputs/TextInput";
 
-export default function Newsletter() {
-  const [isOpen, setIsOpen] = useState(false);
+function Newsletter({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}) {
   // Email
   const [isMailSent, setIsMailSent] = useState(false);
   const [formError, setFormError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
-  // Open newsletter after 20 seconds
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsOpen(true);
-    }, 20000);
-
-    return () => clearTimeout(timeout);
-  }, []);
 
   // Ref
   const formRef = useRef<HTMLFormElement>(null);
@@ -127,3 +123,30 @@ export default function Newsletter() {
     </Modal>
   );
 }
+
+function NewsletterAutomatic() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Open newsletter after 20 seconds
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsOpen(true);
+    }, 20000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return <Newsletter isOpen={isOpen} setIsOpen={setIsOpen} />;
+}
+
+function NewsletterManual({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}) {
+  return <Newsletter isOpen={isOpen} setIsOpen={setIsOpen} />;
+}
+
+export { NewsletterAutomatic, NewsletterManual };
