@@ -1,6 +1,7 @@
 import SwiperCore, { A11y, Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
+import Button from "../Button";
 import Container from "../Container";
 import Heading from "../Heading";
 import Reveal from "../Reveal";
@@ -61,7 +62,7 @@ function Carousel() {
       spaceBetween={30}
       slidesPerView={1}
       pagination={{ clickable: true }}
-      className="h-auto items-center"
+      className="swiper-themed h-auto items-center"
       loop={true}
       autoplay={{
         delay: 3500,
@@ -110,6 +111,57 @@ export default function Services() {
         <Reveal className="pt-20">
           <Carousel />
         </Reveal>
+
+        {/* Karty */}
+        <div className="flex flex-col-reverse items-center justify-center pt-16 sm:pt-20 md:flex-row lg:pt-28">
+          <div className="shadow-soft-2xl z-0 my-4 px-8 py-10 pb-28 opacity-70 md:px-12">
+            <Heading
+              level="none"
+              size="sm"
+              className="text-center text-primary"
+              hasMarginBottom
+            >
+              Stará cesta
+            </Heading>
+            <ul className="list-disc space-y-3 font-semibold marker:text-primary-400">
+              <li>Žiju z výplaty do výplaty</li>
+              <li>Nemám finanční rezervu</li>
+              <li>Neinvestuji žádné peníze do aktiv</li>
+              <li>Veškeré peníze utratím</li>
+              <li>Nediverzifikuji své portfolio</li>
+              <li>Nemám vytvořený finanční plán</li>
+            </ul>
+          </div>
+
+          <div className="bg-body z-1 my-4 flex max-w-md scale-105 flex-col rounded-3xl px-8 py-10 leading-5 shadow-2xl md:px-12">
+            <Heading
+              level="none"
+              size="sm"
+              className="text-center text-primary"
+              hasMarginBottom
+            >
+              Nová cesta
+            </Heading>
+            <ul className="list-disc space-y-3 font-semibold marker:text-primary-400">
+              <li>Vytvořte si rezervu</li>
+              <li>Zbavte se špatných dluhů</li>
+              <li>Dobře a levně se pojistěte</li>
+              <li>Kupte nemovistost, když je hypotéka levnější než nájem</li>
+              <li>Investujte do akciových fondů min 10 % příjmů dlouhodobě</li>
+              <li>
+                Nezapoměnte na dluhopisové fondy a nemovitosti – diverzifikujte
+              </li>
+              <li>Před finanční nezávislostí redukujte akicové fondy</li>
+            </ul>
+            <Button
+              href="#kontakt"
+              size="lg"
+              className="mt-8 self-center lg:mt-12"
+            >
+              Začněme
+            </Button>
+          </div>
+        </div>
       </Container>
     </section>
   );

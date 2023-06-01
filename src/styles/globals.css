@@ -4,26 +4,6 @@
 @tailwind variants;
 
 @layer base {
-  /* Swiper */
-  root {
-    --swiper-theme-color: theme(colors.primary.600);
-
-    --swiper-navigation-size: 36px;
-    --swiper-navigation-color: var(--swiper-theme-color);
-
-    --swiper-pagination-color: var(--swiper-theme-color);
-    --swiper-pagination-bullet-size: 8px;
-    --swiper-pagination-bullet-width: 8px;
-    --swiper-pagination-bullet-height: 8px;
-    --swiper-pagination-bullet-inactive-color: theme(colors.gray.900);
-    --swiper-pagination-bullet-inactive-opacity: 0.2;
-    --swiper-pagination-bullet-opacity: 1;
-    --swiper-pagination-bullet-horizontal-gap: 5px;
-    --swiper-pagination-bullet-vertical-gap: 6px;
-
-    --swiper-preloader-color: var(--swiper-theme-color);
-  }
-
   html {
     @apply scroll-pt-16 scroll-smooth font-sans accent-primary selection:bg-primary-600/80 selection:text-white;
   }
@@ -46,6 +26,26 @@
   .pattern-black {
     @apply bg-hero-pattern-black opacity-[0.05];
     background-size: 240px;
+  }
+
+  /* Swiper */
+  .swiper-themed {
+    --swiper-theme-color: theme(colors.secondary.500);
+
+    --swiper-navigation-size: 36px;
+    --swiper-navigation-color: var(--swiper-theme-color);
+
+    --swiper-pagination-color: var(--swiper-theme-color);
+    --swiper-pagination-bullet-size: 8px;
+    --swiper-pagination-bullet-width: 8px;
+    --swiper-pagination-bullet-height: 8px;
+    --swiper-pagination-bullet-inactive-color: theme(colors.gray.900);
+    --swiper-pagination-bullet-inactive-opacity: 0.2;
+    --swiper-pagination-bullet-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 5px;
+    --swiper-pagination-bullet-vertical-gap: 6px;
+
+    --swiper-preloader-color: var(--swiper-theme-color);
   }
 }
 

@@ -4,6 +4,9 @@ import Seo from "@/components/Seo";
 import Collaboration from "@/components/sections/Collaboration";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
+import InteractiveTests from "@/components/sections/InteractiveTests";
+import LargeButtons from "@/components/sections/LargeButtons";
+import ParallaxPhoto from "@/components/sections/ParallaxPhoto";
 import Services from "@/components/sections/Services";
 import Testimonials from "@/components/sections/Testimonials";
 
@@ -25,12 +28,11 @@ export default function Home() {
 
       <Services />
 
+      <ParallaxPhoto />
       <Collaboration />
+      <InteractiveTests />
+      <LargeButtons />
       <Testimonials />
-
-      <Container py="xl">Empty space</Container>
-      <Container py="xl">Empty space</Container>
-      <Container py="xl">Empty space</Container>
 
       <Contact />
     </Layout>

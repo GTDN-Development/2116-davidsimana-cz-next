@@ -56,7 +56,7 @@ export default function Testimonials({
         spaceBetween={30}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        className="bg-gradient-to-r from-primary-900 to-primary-700 py-16 text-center text-white md:to-primary-500"
+        className="swiper-themed bg-gradient-to-r from-primary-900 to-primary-700 py-16 text-center text-white md:to-primary-500"
         loop={true}
         autoplay={{
           delay: 5500,
@@ -75,7 +75,7 @@ export default function Testimonials({
                   <Heading
                     level={"none"}
                     size="sm"
-                    className="mb-0 text-left text-secondary"
+                    className="text-left text-secondary"
                     hasMarginBottom
                   >
                     {testimonial.name}
@@ -83,7 +83,8 @@ export default function Testimonials({
                   <Heading
                     level={"none"}
                     size="xs"
-                    className="mb-0 text-left !font-medium text-gray-200/70"
+                    color="inherit"
+                    className="mb-0 text-left !font-medium text-gray-200"
                   >
                     {testimonial.position}
                   </Heading>

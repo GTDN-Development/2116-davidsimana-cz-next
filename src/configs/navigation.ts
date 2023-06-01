@@ -3,6 +3,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
   FaSpotify,
+  FaYoutube,
 } from "react-icons/fa";
 
 export const routes = [
@@ -41,23 +42,30 @@ export const contact = [
 
 export const socials = [
   {
-    href: "https://www.facebook.com/drive4people",
-    label: "Facebook",
-    icon: FaFacebookF,
-  },
-  {
     href: "https://www.instagram.com/drive4people",
     label: "Instagram",
     icon: FaInstagram,
   },
   {
-    href: "https://open.spotify.com/show/5Z3Z1Z2Z2Z2Z2Z2Z2Z2Z2Z",
-    label: "Spotify",
-    icon: FaSpotify,
+    href: "https://www.facebook.com/drive4people",
+    label: "Facebook",
+    icon: FaFacebookF,
   },
   {
     href: "https://www.linkedin.com/company/drive4people",
     label: "LinkedIn",
     icon: FaLinkedinIn,
+  },
+  {
+    href: "https://www.youtube.com/@davidsimanapfp",
+    label: "Youtube",
+    icon: FaYoutube,
+    classNames: "bg-red-600",
+  },
+  {
+    href: "https://open.spotify.com/show/1jt4nG4mSAxPPoR5nYkEBN",
+    label: "Spotify",
+    icon: FaSpotify,
+    classNames: "bg-emerald-600",
   },
 ];

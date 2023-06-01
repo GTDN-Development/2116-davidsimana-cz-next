@@ -72,7 +72,7 @@ export default function Modal({
                   opacity: 0,
                   transition: { duration: 0.1, ease: "easeOut" },
                 }}
-                className="fixed inset-0 z-modal-below h-screen w-screen bg-black/40 backdrop-blur-sm dark:bg-white/20"
+                className="fixed inset-0 z-modal-below h-screen w-screen bg-black/50 backdrop-blur-sm"
                 aria-hidden={true}
                 onClick={() => setIsOpen(false)}
               />

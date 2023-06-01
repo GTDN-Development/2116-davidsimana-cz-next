@@ -49,7 +49,7 @@ export default function Collaboration({
             s mým týmem a asistentkou, abychom Vám poskytli co nejlepší služby.
           </p>
         </Reveal>
-        <div className="mx-auto grid w-full gap-10 py-12 sm:py-20 lg:max-w-5xl lg:grid-cols-2 lg:py-28">
+        <div className="mx-auto grid w-full gap-10 py-12 sm:pt-16 lg:max-w-5xl lg:grid-cols-2 lg:pt-24">
           {content.map((item) => (
             <Reveal
               key={item.number}
