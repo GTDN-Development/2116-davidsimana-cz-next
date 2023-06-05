@@ -30,7 +30,7 @@ const tests = [
 
 export default function InteractiveTests() {
   return (
-    <Container as={"section"} py="md" id="finance">
+    <Container as={"section"} py="md" id="o-financich">
       <Reveal>
         <Heading
           level={2}

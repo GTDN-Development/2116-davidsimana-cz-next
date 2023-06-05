@@ -210,7 +210,7 @@ export default function Contact() {
               onClick={() => setIsNewsletterOpen(true)}
               className="text-lg font-semibold sm:text-xl lg:text-2xl"
             >
-              Odebírej novinky
+              Odebírejte novinky
             </Link>
           </Reveal>
         </Reveal>

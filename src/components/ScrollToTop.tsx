@@ -31,7 +31,7 @@ export default function ScrollToTop() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed bottom-8 right-8 z-fixed rounded-full bg-primary p-5 transition-colors duration-300 hover:bg-primary-700"
+          className="fixed bottom-8 right-8 z-fixed rounded-full bg-secondary p-5 transition-colors duration-300 hover:bg-secondary-700"
           onClick={ScrollToTop}
         >
           <HiArrowUp className="h-5 w-5 text-white" />

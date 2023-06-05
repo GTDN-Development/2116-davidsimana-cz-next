@@ -32,7 +32,7 @@ export default function Collaboration({
   className?: string;
 }) {
   return (
-    <section className={clsx("", className)}>
+    <section id="jak-fungujeme" className={clsx("", className)}>
       <Container py="md">
         <Reveal className="mx-auto flex max-w-3xl flex-col items-center justify-center">
           <Heading
