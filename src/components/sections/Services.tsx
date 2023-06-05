@@ -145,12 +145,12 @@ export default function Services() {
               <li>Vytvořte si rezervu</li>
               <li>Zbavte se špatných dluhů</li>
               <li>Dobře a levně se pojistěte</li>
-              <li>Kupte nemovistost, když je hypotéka levnější než nájem</li>
+              <li>Kupte nemovitost, když je hypotéka levnější než nájem</li>
               <li>Investujte do akciových fondů min 10 % příjmů dlouhodobě</li>
               <li>
                 Nezapoměnte na dluhopisové fondy a nemovitosti – diverzifikujte
               </li>
-              <li>Před finanční nezávislostí redukujte akicové fondy</li>
+              <li>Před finanční nezávislostí redukujte akciové fondy</li>
             </ul>
             <Button
               href="#kontakt"

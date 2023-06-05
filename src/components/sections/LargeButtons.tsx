@@ -17,7 +17,7 @@ export default function LargeButtons() {
           color="primary"
           className="mx-auto mb-16 text-center"
         >
-          Poslechtěte si můj podcast
+          Poslechněte si můj podcast
         </Heading>
 
         <div className="grid gap-10 sm:grid-cols-2">
