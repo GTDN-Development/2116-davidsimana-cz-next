@@ -1,5 +1,4 @@
 import LayoutRoot from "@/components/LayoutRoot";
-import { Analytics } from "@vercel/analytics/react";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
@@ -28,7 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <LayoutRoot>
         <Component {...pageProps} />
       </LayoutRoot>
-      <Analytics />
     </>
   );
 }
