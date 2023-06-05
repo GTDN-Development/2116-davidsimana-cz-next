@@ -1,5 +1,6 @@
 import Favicon from "@/components/Favicon";
 import NextHead from "next/head";
+import { NewsletterAutomatic } from "./sections/Newsletter";
 
 type LayoutRootProps = {
   children: React.ReactNode;
@@ -17,6 +18,7 @@ export default function LayoutRoot({ children }: LayoutRootProps) {
         />
       </NextHead>
       {children}
+      <NewsletterAutomatic />
     </>
   );
 }
