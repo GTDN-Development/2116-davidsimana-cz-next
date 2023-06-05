@@ -43,7 +43,10 @@ const investmentTestimonials = [
 export default function Investice() {
   return (
     <Layout>
-      <Seo title="Hypotéky" description="Lorem ipsum dolor" />
+      <Seo
+        title="Investice"
+        description="Přemýšlejte o svém majetku dlouhodobě - co kdyby vás živily vaše peníze, až to nebudete chtít dělat sami?"
+      />
 
       {/* Hero */}
       <Container

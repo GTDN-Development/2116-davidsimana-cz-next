@@ -43,7 +43,10 @@ const mortgageTestimonials = [
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Hypotéky" description="Lorem ipsum dolor" />
+      <Seo
+        title="Hypotéky"
+        description="Již nemusíte odkládat své vysněné bydlení. Napište mi prostřednictvím formuláře a získejte jasné informace o svých možnostech!"
+      />
 
       {/* Hero */}
       <Container
