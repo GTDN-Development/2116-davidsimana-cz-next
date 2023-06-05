@@ -10,6 +10,9 @@ import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
 import "@fontsource/montserrat/800.css";
 
+// Swiper css
+import "swiper/swiper-bundle.css";
+
 export default function App({ Component, pageProps }: AppProps) {
   // Disable smooth scroll on route change: https://github.com/vercel/next.js/issues/20125#issuecomment-757547865
   const router = useRouter();

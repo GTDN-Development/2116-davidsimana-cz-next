@@ -7,36 +7,36 @@ import Ebook from "@/components/sections/Ebook";
 import Message from "@/components/sections/Message";
 import Testimonials from "@/components/sections/Testimonials";
 
-const mortgageTestimonials = [
+const investmentTestimonials = [
   {
-    name: "Beatrice Fictum",
-    position: "Design ve stavebnictví",
+    name: "Mgr. Ondřej Mach",
+    position: "Firemní právník",
     content:
-      "Naprosto výjimečný přístup a profesionální jednání. V mem případě se jednalo o zahraniční úvěr bez dokládání příjmu… opravdu složitý a zdlouhavý proces, kterým se David “prokousal” ke zdárnému a úspěšnému konci. Vše vyřídil, se vším pomohl, poradil a skvěle to zorganizoval a vymyslel. Děkuji za to!!!",
+      "Pan Šimana dokáže vždy najít optimální řešení a přizpůsobit se i klientovi, který občas řeší věci ze dne na den. Navíc zná i takové způsoby financování a investování, které mnoho jiných finančních poradců a bankéřů pokládá za neexistující. Pana Šimanu tedy lze jedině doporučit.",
   },
   {
-    name: "David Hrách",
-    position: "OSVČ Stavební činnost",
+    name: "Nhat Long Dinh",
+    position: "OSVČ montáž fotovolatiky",
     content:
-      "S Davidem jsme řešili hypotéku bez prokazování příjmu. Měli jsme pár schůzek, ve kterých mi mimo jiné řekl co krok za krokem udělat, aby mi ji banka dala. Asi cca po 4 měsících mi schválili přesně tolik, kolik bylo třeba. Za to jsem mu vděčný. Řešili jsme nějaké spoření na které stát přispívá a i ukládání peněz, aby neztratili svou hodnotu. Schůzky jsou vždy velmi příjemné a domluvené tak, aby čas vyhovoval vždy mně. Celkově jsem velmi spokojený klient.",
+      "Za mě super člověk se kterým se velice dobře mluví a velice rád Vám pomůže s vysvětlením ohledně financí nebo investování a pojištění.",
   },
   {
-    name: "Ondřej Langmajer",
-    position: "MAVY Monolity s.r.o.",
+    name: "David Hrubý",
+    position: "OSVČ Pendler",
     content:
-      "Na pana Šimanu jsme narazili náhodou a to reklamou na sociálních sítích. V tu dobu jsme aktivně řešili provozní úvěr pro naši společnost, ale bez úspěchu. Až pan Šimana nám s tímto problémem pomohl, navrhl konstruktivní řešení a celou věc dotáhl až do zdárného konce. Vyřešením jednoho problému ale pro p. Šimanu neskončila a proaktivně nabízel další možnosti, jak pomoci naší společnosti. Moc děkujeme za jeho služby, které budeme i nadále rádi využívat.",
+      "David je velmi příjemný, spolehlivý a ochotný poradce. Už po první schůzce mi bylo jasné, že jsem zde správně. Veškeré mé dotazy zodpověděl a se vším ochotně poradil. Poprvé jsem za Davidem šel pro radu ohledně pojistky na vozidlo, sedli jsme si a David mi ukázal veškeré služby které nabízí. Jeho práce se mi velmi líbí a jsem spokojený. Určitě doporučuji!",
   },
   {
-    name: "Ondřej Nádvorník, MBA",
-    position: "jednatel FINLEY AGENCY s.r.o.",
+    name: "Jindřich Zachrla",
+    position: "Vládní zaměstnanec (Armáda ČR)",
     content:
-      "Díky Davidu Šimanovi se nám podařilo pro náš projekt získat firemní financování od renomované banky. David byl profesionální, proaktivní a právě díky jenom zkušenostem a kontaktů se vše podařilo dohodnout a zrealizovat ve velmi krátkém čase. Davidovi tímto děkuji a rád se na něj obrátím i v budoucnu v dalších případech, kdy půjde o naše finanční plánování.",
+      "David je člověk, který se všestranně stará o mé finance. Není to tak dlouho co jsem zjistil, že tuhle část bych rád přenechal odborníkovi, kterým David bezpochyby je. Spravuje mé investice, pomohl mi refinancovat půjčky a v neposlední řadě pro mě zajištuje hypotéku za účelem rozjezdu podnikání. Několikrát mě přesvědčil, že mé finance jsou pod jeho správou v bezpečí a zachází s nimi jak nejlépe umí (a že to umí ). Mimo jeho schopnosti oceňuji také jeho ochotu pomoct a poradit kdykoli potřebuji. S čistým svědomím mohu říct, že Davida doporučuji ať už hledáte cokoli ohledně financí, nebo prostě jen chcete finančního poradce s přátelským přístupem a skvělými dovednostmi.",
   },
   {
-    name: "Petroff Teodor",
-    position: "Vedoucí pracovník v automotive",
+    name: "Filip Zimanzl",
+    position: "OSVČ – Obchodní zástupce",
     content:
-      "David vyřídil i to nemožné ! Co se tyče financování, refinancovani i sloučení více úvěru do jednoho snad nejlepší volba. Rychle spolehlivé a na jedno zavolání vše vyřízené! Velice doporučuji!!!",
+      "David je nejen skvělý investiční poradce, ale také skvělý člověk, co vždy rad pomůže a vyhoví vašim potřebám! pokud potřebujete ve světě financí poradit, David je člověk číslo jedna na koho se obrátit! ",
   },
 ];
 
@@ -85,7 +85,7 @@ export default function Investice() {
       />
 
       {/* Testimonials */}
-      <Testimonials testimonials={mortgageTestimonials} />
+      <Testimonials testimonials={investmentTestimonials} />
 
       {/* Contact */}
       <Contact />
