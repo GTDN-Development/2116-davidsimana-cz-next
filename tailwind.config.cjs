@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         gray: colors.slate,
         primary: {
-          DEFAULT: colors.violet[600],
+          DEFAULT: colors.violet[700],
           ...colors.violet,
         },
         secondary: {
