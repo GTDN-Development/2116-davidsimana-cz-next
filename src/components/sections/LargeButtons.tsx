@@ -31,7 +31,7 @@ export default function LargeButtons() {
                   )}
                 >
                   <Image
-                    src="/images/podcast-cover.jpg"
+                    src="/img/podcast-cover.jpg"
                     alt="David Šimana podcast"
                     width={1024}
                     height={1024}

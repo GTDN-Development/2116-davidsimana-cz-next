@@ -9,22 +9,22 @@ const tests = [
   {
     title: "Finanční zdraví",
     href: "/testy/financni-zdravi",
-    src: "/images/test-financni-zdravi.jpg",
+    src: "/img/test-financni-zdravi.jpg",
   },
   {
     title: "Pracovní příležitosti",
     href: "/testy/pracovni-prilezitosti",
-    src: "/images/test-pracovni-prilezitosti.jpg",
+    src: "/img/test-pracovni-prilezitosti.jpg",
   },
   {
     title: "Investice",
     href: "/testy/investice",
-    src: "/images/test-investice.jpg",
+    src: "/img/test-investice.jpg",
   },
   {
     title: "Hypotéka nebo nájem?",
     href: "/testy/hypoteka-najem",
-    src: "/images/test-hypoteky.jpg",
+    src: "/img/test-hypoteky.jpg",
   },
 ];
 

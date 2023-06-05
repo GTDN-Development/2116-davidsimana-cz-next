@@ -81,7 +81,7 @@ export default function Investice() {
 
       {/* E-book */}
       <Ebook
-        src="/images/e-book-investice.png"
+        src="/img/e-book-investice.png"
         templateId="template_crjo9xw"
         title="Chcete se dozvědět více o investování?"
         description="Připravil jsem pro Vás krátký  e-book, 10 nejčastějších otázek ohledně investování, kde naleznete cenné informace."

@@ -81,7 +81,7 @@ export default function Home() {
 
       {/* E-book */}
       <Ebook
-        src="/images/e-book-hypoteky.png"
+        src="/img/e-book-hypoteky.png"
         templateId="template_vjpin0c"
         title="Chcete se dozvědět více hypotékách?"
         description="Připravil jsem pro Vás krátký e-book, 10 nejčastějších otázek před sjednáním hypotéky, kde naleznete vše potřebné před tím než budete řešit hypotéku."

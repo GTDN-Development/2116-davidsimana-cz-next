@@ -8,7 +8,7 @@ export default function ParallaxPhoto() {
   if (!isMobileAndLarger) {
     return (
       <Image
-        src="/images/team.jpg"
+        src="/img/team.jpg"
         alt="Můj tým"
         width={2560}
         height={1440}
@@ -25,7 +25,7 @@ export default function ParallaxPhoto() {
         className="absolute inset-0 -z-10 w-full opacity-70"
       >
         <Image
-          src="/images/team.jpg"
+          src="/img/team.jpg"
           alt="Můj tým"
           width={2560}
           height={1440}

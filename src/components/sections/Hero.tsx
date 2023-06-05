@@ -41,12 +41,21 @@ export default function Hero() {
         </Reveal>
 
         <div className="col-span-1 flex items-end justify-center pt-16 2xl:col-span-2">
-          <Image
+          {/* <Image
             src="/img-old/portrait.png"
             width={1000}
             height={1332}
             alt="Portrét David Šimana"
             className="w-full max-w-md object-contain lg:max-w-none 2xl:scale-[1.4]"
+            loading="eager"
+            priority
+          /> */}
+          <Image
+            src="/img/hero-2023.png"
+            width={741}
+            height={1332}
+            alt="Portrét David Šimana"
+            className="2xl:scale-115 w-full max-w-md object-contain lg:max-w-none"
             loading="eager"
             priority
           />
