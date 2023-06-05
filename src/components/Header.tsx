@@ -307,7 +307,7 @@ export default function Header() {
             </ul>
           </div>
 
-          <div className="xl:ml-5">
+          <div className="hidden xs:block xl:ml-5">
             <Button size="sm" leftIcon={<HiPhone />} href={contact[0].href}>
               {contact[0].label}
             </Button>
