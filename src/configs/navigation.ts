@@ -35,8 +35,8 @@ export const routes = [
 
 export const contact = [
   {
-    href: "tel:+420773997434",
-    label: "+420 773 997 434",
+    href: "tel:+420722214141",
+    label: "+420 722 21 41 41",
   },
   {
     href: "mailto:info@davidsimana.cz",
