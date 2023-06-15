@@ -178,12 +178,9 @@ export default function Contact() {
           </Heading>
           <Reveal>
             <p>
-              Ke každé nezávazné schůzce ode mě dostanete ebook{" "}
-              <span className="font-semibold">
-                7 oblastí pro zdravé finance
-              </span>
-              , kde se dozvíte spoustu zajímavých rad, které Vám pomůžou na
-              cestě za finanční svobodou.
+              Vyplňte kontaktní formulář a zanech mi na sebe kontakt. Můžete mě
+              kontaktovat telefonicky nebo e-mailem ať žijete kdekoli. Využijte
+              můj čas a zkušenosti.
             </p>
           </Reveal>
           <Reveal className="mt-5 flex flex-col items-start justify-start gap-3 lg:gap-6">

@@ -30,13 +30,15 @@ export default function LargeButtons() {
                     social.classNames
                   )}
                 >
-                  <Image
-                    src="/img/podcast-cover.jpg"
-                    alt="David Šimana podcast"
-                    width={1024}
-                    height={1024}
-                    className="absolute right-0 top-[60%] z-10 w-1/2 -translate-y-1/2 translate-x-1/4 rotate-12 scale-110 rounded-xl shadow-xl transition duration-500 group-hover:scale-[1.2]"
-                  />
+                  {social.src && (
+                    <Image
+                      src={social.src}
+                      alt="David Šimana podcast"
+                      width={1024}
+                      height={1024}
+                      className="absolute right-0 top-[60%] z-10 w-1/2 -translate-y-1/2 translate-x-1/4 rotate-12 scale-110 rounded-xl shadow-xl transition duration-500 group-hover:scale-[1.2]"
+                    />
+                  )}
                   <div className="relative z-20 flex flex-col items-start justify-start gap-5">
                     <social.icon className="h-9 w-9" aria-hidden="true" />
                     <Heading

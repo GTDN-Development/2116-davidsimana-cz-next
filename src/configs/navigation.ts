@@ -64,12 +64,14 @@ export const socials = [
     href: "https://www.youtube.com/@davidsimanapfp",
     label: "Youtube",
     icon: FaYoutube,
+    src: "/img/podcast-cover-youtube.jpg",
     classNames: "bg-gradient-to-br from-red-600 to-red-900",
   },
   {
     href: "https://open.spotify.com/show/1jt4nG4mSAxPPoR5nYkEBN",
     label: "Spotify",
     icon: FaSpotify,
+    src: "/img/podcast-cover-spotify.jpg",
     classNames: "bg-gradient-to-br from-emerald-600 to-emerald-800",
   },
 ];
