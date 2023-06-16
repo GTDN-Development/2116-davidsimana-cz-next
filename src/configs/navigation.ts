@@ -72,6 +72,6 @@ export const socials = [
     label: "Spotify",
     icon: FaSpotify,
     src: "/img/podcast-cover-spotify.jpg",
-    classNames: "bg-gradient-to-br from-emerald-600 to-emerald-800",
+    classNames: "bg-gradient-to-br from-green-600 to-green-800",
   },
 ];
