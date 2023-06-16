@@ -90,7 +90,7 @@ export default function Testimonials({
                     level={"none"}
                     size="xs"
                     color="inherit"
-                    className="mb-0 text-left !font-medium text-gray-200"
+                    className="mb-0 text-left !font-medium uppercase text-gray-200"
                   >
                     {testimonial.position}
                   </Heading>
