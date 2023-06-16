@@ -44,11 +44,11 @@ export default function InteractiveTests() {
       </Reveal>
       <Reveal>
         <p className="mx-auto w-full max-w-3xl pb-20 text-center">
-          V rámci finančního gramotnosti jsem pro Vás připravil několik testů,
-          kde si můžete ověřit Vaše znalosti v různých kategoriích napříč
-          financemi. Po každém testu od nás dostanete finanční doporučení. Pokud
-          se budete chtít dozvědět o financích více můžete vyzkoušet můj podcast
-          nebo si stáhnout e-book.
+          V rámci finanční gramotnosti jsem pro Vás připravil několik testů, kde
+          si můžete ověřit Vaše znalosti v různých kategoriích napříč financemi.
+          Po každém testu od nás dostanete finanční doporučení. Pokud se budete
+          chtít dozvědět o financích více můžete vyzkoušet můj podcast nebo si
+          stáhnout e-book.
         </p>
       </Reveal>
 
