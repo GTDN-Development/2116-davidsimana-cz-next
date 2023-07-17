@@ -52,7 +52,10 @@ const homePageTestimonials = [
 export default function Home() {
   return (
     <Layout>
-      <Seo title="Finanční poradce" description="Lorem ipsum dolor" />
+      <Seo
+        title="Finanční plánování"
+        description="Specializuji se na podnikatele, majitele firem, freelancery, manažery, lékaře a IT specialisty."
+      />
 
       <Hero />
 

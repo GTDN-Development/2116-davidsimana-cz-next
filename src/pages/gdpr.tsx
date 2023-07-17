@@ -4,13 +4,13 @@ import Prose from "@/components/Prose";
 import Seo from "@/components/Seo";
 
 const globalSettings = {
-  launchDate: "14. 2. 2022",
+  launchDate: "21. 8. 2022",
   client: {
-    fullName: "Lukáš Jiránek",
-    ico: "05564867",
-    phone: "+420 773 997 434",
+    fullName: "David Šimana",
+    ico: "05673887",
+    phone: "+420 722 214 141",
     email: "info@davidsimana.cz",
-    adress: "Hornická 223, 33 022 Zbůch",
+    adress: "Osvobozených politických vězňů 1070, 330 23 Nýřany",
   },
 };
 

@@ -1,3 +1,4 @@
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import LayoutRoot from "@/components/LayoutRoot";
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <GoogleAnalytics measurementId="G-3B7804Y56B" />
       <LayoutRoot>
         <Component {...pageProps} />
       </LayoutRoot>
