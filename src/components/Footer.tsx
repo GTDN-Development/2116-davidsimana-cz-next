@@ -64,7 +64,7 @@ export default function Footer() {
                   info@davidsimana.cz
                 </Link>
               </li>
-              <li>Prešovská 194/15, 301 00 Plzeň 3 Vnitřní Město</li>
+              <li>Na Roudné 272/21301 00 Plzeň 1</li>
             </ul>
           </div>
         </div>
@@ -72,6 +72,15 @@ export default function Footer() {
           <Socials className="mb-6 text-white" />
 
           <ul className="mt-auto flex list-none flex-col space-y-4 lg:flex-row lg:space-x-10 lg:space-y-0">
+            <li>
+              <Link
+                href="/spoluprace-servisni-organizace"
+                hoverEffect="scale-up"
+                className="font-normal text-white"
+              >
+                Spolupráce se servisní organizací
+              </Link>
+            </li>
             <li>
               <Link
                 href="/gdpr"

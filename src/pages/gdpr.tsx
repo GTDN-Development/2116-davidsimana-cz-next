@@ -19,7 +19,7 @@ export default function Gdpr() {
     <Layout>
       <Seo title="GDPR" description="Lorem ipsum dolor" />
 
-      <header className="flex h-[512px] w-screen items-center justify-center bg-primary-900 text-primary-100">
+      <header className="flex h-[512px] w-screen items-center justify-center bg-primary-100 text-primary-900">
         <h1 className="text-2xl font-bold sm:text-4xl xl:text-7xl">GDPR</h1>
       </header>
 
