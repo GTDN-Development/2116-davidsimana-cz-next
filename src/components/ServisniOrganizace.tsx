@@ -15,6 +15,7 @@ function ServisniOrganizace() {
         <a
           href="http://www.cnb.cz/cnb/jerrs"
           target="_blank"
+          rel="noreferrer noopener"
           className="underline"
         >
           http://www.cnb.cz/cnb/jerrs
